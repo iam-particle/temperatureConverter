@@ -22,28 +22,32 @@
 
       <main>
         <section>
-          <h2>AldTemp Convert</h2>
+          <h2>Convert</h2>
           <p>Convert temperature to Celsius, Fahrenheit, or Kelvin</p>
-          <br />
           <form id="formConvert">
             <label for="fromTemp">Choose a type of temp: </label>
-            <select id="fromTemp">
-              <option value="celsius">Celsius</option>
-              <option value="fahrenheit">Fahrenheit</option>
-              <option value="kelvin">Kelvin</option>
-            </select>
-            <h3>To</h3>
-            <select id="toTemp">
-              <option value="celsius">Celsius</option>
-              <option value="fahrenheit">Fahrenheit</option>
-              <option value="kelvin">Kelvin</option>
-            </select>
+            <div class="options">
+              <select id="fromTemp">
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+                <option value="kelvin">Kelvin</option>
+              </select>
+              <h3>To</h3>
+              <select id="toTemp">
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+                <option value="kelvin">Kelvin</option>
+              </select>
+            </div>
 
             <label for="value">Value:</label>
             <input type="number" id="value" placeholder="Enter value" />
 
             <button type="button" onclick="submitForm()">Submit</button>
-            <p id="result"></p>
+            <div class="result">
+              <h4>Result :</h4>
+              <p id="result"></p>
+            </div>
           </form>
         </section>
       </main>

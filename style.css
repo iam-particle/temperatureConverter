@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Raleway", Helvetica, sans-serif;
+  font-weight: 600;
+}
+
+p,
+label,
+select,
+button,
+input {
+  font-family: "Inter", Helvetica, sans-serif;
+}
+
+header h1 {
+  padding: 20px;
+  text-align: center;
+}
+
+section h2::before {
+  content: "AldTemp ";
+  color: #ee0418;
+  font-weight: bold;
+}
+
+main {
+  max-width: 50vw;
+  border: 3px solid #ee0418;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form#formConvert {
+  margin: 20px 0px 0px;
+}
+
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 10px;
+  align-items: center;
+}
+
+.options select {
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+.options select:last-of-type {
+  border: 1px solid #ee0418;
+}
+
+form input {
+  width: 80%;
+}
+
+input#value {
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #ee0418;
+  margin: 20px 0px 0px;
+}
+
+section form button {
+  margin: 20px auto 0px;
+  padding: 10px 30px;
+  background-color: #ee0418;
+  color: #fff;
+  border-radius: 10px;
+  border: 2px solid #94020e;
+  display: flex;
+  justify-self: center;
+}
+
+.result {
+  margin: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.result h4 {
+  font-size: 1.5em;
+}
+
+p#result {
+  font-size: 1.3em;
+}
+
+footer {
+  padding: 20px;
+}
