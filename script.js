@@ -31,5 +31,5 @@ function submitForm() {
   }
 
   document.getElementById("result").innerText =
-    "Result: " + result.toFixed(2) + " " + toUnit;
+    result.toFixed(2) + " º" + toUnit.toUpperCase();
 }
